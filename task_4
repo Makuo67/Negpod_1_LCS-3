@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+anything = input("type any word you want:").lower()
+vowels = ["y", 'i', 'e', "o", "u", "a", "I", "O","E", "U", "A", "Y"]
+
+i = 0
+
+# for i in anything:
+#  if i in vowels:
+#     anything = anything.replace(i, '')
+
+while i < len(anything):
+      if anything[i] in vowels:
+         anything = anything.replace(anything[i], "")
+         # i += 1
+         continue
+
+      i +=1
+print("\nwithout vowels =", anything)
